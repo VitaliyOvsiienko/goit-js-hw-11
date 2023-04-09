@@ -63,7 +63,7 @@ function createUrlParams(value, page) {
 }
 
 function addMarkup(markup = '') {
-  galleryRef.innerHTML = markup;
+  galleryRef.insertAdjacentHTML('beforeend', markup);
 }
 
 async function onClick() {
@@ -78,6 +78,9 @@ async function onClick() {
       btnRef.classList.add('is-hidden');
       showMessage();
     }
+    galleryRef.lastElementChild.scrollIntoView({
+      behavior: 'smooth',
+    });
   } catch (error) {
     console.log(error.message);
   }
