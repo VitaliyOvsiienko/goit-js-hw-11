@@ -23,7 +23,29 @@
   border: none;
 }
 
+.btn-load-more:hover,
+.btn-load-more:focus {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background-color: darkgrey;
+  color: #20214f;
+}
+
 .info-item {
   display: flex;
   flex-direction: column;
+}
+
+.btn-submit {
+  margin-left: 20px;
+  cursor: pointer;
+  color: #20214f;
+}
+
+.btn-submit:hover,
+.btn-submit:focus {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background-color: darkgrey;
+  color: #20214f;
 }
